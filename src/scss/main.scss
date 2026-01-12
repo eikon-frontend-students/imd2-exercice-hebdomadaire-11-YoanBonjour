@@ -4,11 +4,69 @@
   padding: 0;
 }
 
+body {
+  padding: 50px 50px;
+  font-family: Roboto, sans-serif;
+}
+
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
 video {
   display: block;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 2px solid #f00;
+  border-radius: 100px;
+  transition: color 0.3s;
+}
+
+.like {
+  color: #f00;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  transition: color 0.3s;
+}
+
+.like-nbrs {
+  font-size: 14px;
+  line-height: 18px;
+  transition: color 0.3s;
+}
+
+i {
+  color: #f00;
+  font-size: 18px;
+  line-height: 18px;
+  transition: color 0.3s;
+}
+
+.button.is-active {
+  background-color: #f00;
+}
+
+.like.is-active {
+  color: #fff;
+}
+
+i.is-active {
+  color: #fff;
+}
+
+.like-nbrs.is-active {
+  color: #fff;
+}
+
+.button:hover {
+  cursor: pointer;
 }
